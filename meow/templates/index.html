@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docking</title>
+
+  <link rel="stylesheet" href="static/Miew.min.css">
+  <script src="https://unpkg.com/@babel/polyfill@7/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/lodash@^4.17.15/lodash.js"></script>
+  <script src="https://unpkg.com/three@0.125.0/build/three.min.js"></script>
+  <script src="../static/Miew.js"></script>
+</head>
+
+<body>
+  <div style="width:500px; height:60px; margin:0 auto;"><h1>Rendering docking results in Miew</h1></div>
+<div class="miew-container" style="width:1200px; height:800px; position:relative; margin:0 auto;"></div>
+
+<div style="padding-top: 0.5em; margin:0 auto; width:1200px; height:100px;">
+  <input type="checkbox" id="hydrophobic_getter" value="hydrophobic" autocomplete="off">hydrophobic
+  <input type="checkbox" id="pistacking_getter" value="pi-stacking" autocomplete="off">pi-stacking
+  <select id="display_mode_selector" style="margin:20px" autocomplete="off">
+    <option value="BS">Balls and sticks</option>
+    <option value="LN">Lines</option>
+    <option value="LC">Licorice</option>
+    <option value="VW">Van der Waals</option>
+    <option value="TR">Trace</option>
+    <option value="TU">Tube</option>
+    <option value="CA" selected="selected">Cartoon</option>
+    <option value="SA">Isosurface</option>
+    <option value="QS">Quick surface</option>
+    <option value="SE">Solvent excluded</option>
+    <option value="TX">Text</option>
+  </select>
+</div>
+
+<script src="static/events.js" my_complex="{{my_complex}}"></script>
+<script src="static/BufferGeometryUtils.js"></script>
+</body>
+</html>
