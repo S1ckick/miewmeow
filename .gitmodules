@@ -1,3 +1,3 @@
 [submodule "miew"]
 	path = miew
-	url = https://github.com/S1ckick/miew.git
+	url = git@bitbucket.org:quantori/scip-miew.git
